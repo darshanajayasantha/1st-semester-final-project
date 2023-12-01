@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #00a8ff;">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="211.0" layoutX="164.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pic/download__1_-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="100.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library System" wrappingWidth="348.6708984375">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginPane" layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="39.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="172.99999296665192">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <Text layoutX="39.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back. please login in to your account.." wrappingWidth="451.9999929666519">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="102.0" layoutY="219.0" onAction="#userNameOnAction" prefHeight="31.0" prefWidth="325.0" promptText="UserName">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassWord" layoutX="102.0" layoutY="300.0" onAction="#passwordOnAction" prefHeight="31.0" prefWidth="325.0" promptText="PassWord">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" layoutX="194.0" layoutY="446.0" onAction="#onLogin" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: white; -fx-border-color: #00a8ff;" text="Login" textFill="#00a8ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Hyperlink layoutX="301.0" layoutY="353.0" onAction="#OnForgotPassword" prefHeight="29.0" prefWidth="138.0" text="Forgot Password?" />
+            <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="62.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pic/download.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="62.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pic/images.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="145.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new account" wrappingWidth="181.6708984375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="289.0" layoutY="536.0" onAction="#OnSingup" prefHeight="29.0" prefWidth="67.0" text="SingUp" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

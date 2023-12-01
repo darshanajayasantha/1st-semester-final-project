@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Author" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e175c76-ec57-48ef-83f8-fb20072595fd">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from author]]>
+	</queryString>
+	<field name="AuthorId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="AuthorId"/>
+		<property name="com.jaspersoft.studio.field.label" value="AuthorId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="author"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="author"/>
+	</field>
+	<field name="bookName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bookName"/>
+		<property name="com.jaspersoft.studio.field.label" value="bookName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="author"/>
+	</field>
+	<group name="AuthorId">
+		<groupExpression><![CDATA[$F{AuthorId}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="30" forecolor="#2F0AFF" uuid="806fb27d-bc0b-4901-abfd-79d5c0d9f782">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf803e34-431d-4667-81c9-ff9e2b3fb15e"/>
+				</reportElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="30" forecolor="#2F0AFF" uuid="0c88b2d6-6462-47dc-965c-983d6655190a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52f55c95-9896-4e1b-8fa0-4850c9bc6a9d"/>
+				</reportElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" forecolor="#2F0AFF" uuid="263ad067-e193-483b-8fe6-5e8a4572ca37">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3735261-b000-4d1e-b22d-4759096a534a"/>
+				</reportElement>
+				<text><![CDATA[Book Name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="8a193aa9-0ffd-4f48-8951-37d3b1a4aa2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf803e34-431d-4667-81c9-ff9e2b3fb15e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{AuthorId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="6597189d-50ac-4442-8c89-7b0d29c944ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52f55c95-9896-4e1b-8fa0-4850c9bc6a9d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="74d4bdce-9fad-45a1-bc65-ced14fcfaa60">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3735261-b000-4d1e-b22d-4759096a534a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bookName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

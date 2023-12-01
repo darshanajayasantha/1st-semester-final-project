@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1160.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.EmailFromController">
+   <children>
+      <JFXButton layoutX="928.0" layoutY="528.0" onAction="#OnSend" prefHeight="42.0" prefWidth="169.0" style="-fx-background-color: #74b9ff;" text="SEND EMAIL">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbEmail" labelFloat="true" layoutX="143.0" layoutY="93.0" onAction="#OnCmbEmail" prefHeight="31.0" prefWidth="793.0" promptText="Select Email" />
+      <TextArea fx:id="txtWrite" layoutX="143.0" layoutY="171.0" prefHeight="322.0" prefWidth="936.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <Label layoutX="28.0" layoutY="30.0" prefHeight="42.0" prefWidth="116.0" text="FROM :-">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="87.0" prefHeight="42.0" prefWidth="78.0" text="TO :-">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="171.0" prefHeight="42.0" prefWidth="116.0" text="SUBJECT :-">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="fromtextfield" layoutX="143.0" layoutY="32.0" prefHeight="31.0" prefWidth="793.0" promptText="sensipeducationalinstitus@gmail.com">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </JFXTextField>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="TEXT" />
+   </cursor>
+</AnchorPane>

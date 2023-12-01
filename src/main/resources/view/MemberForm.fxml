@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1160.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.MemberFormController">
+   <children>
+      <JFXButton layoutX="262.0" layoutY="22.0" onAction="#SEARCH" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #7bed9f;" text="SEARCH">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="searchMemberId" labelFloat="true" layoutX="23.0" layoutY="22.0" prefHeight="31.0" prefWidth="185.0" promptText="SEARCH MEMBERS">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <TableView fx:id="table" layoutX="23.0" layoutY="281.0" prefHeight="303.0" prefWidth="1117.0">
+        <columns>
+          <TableColumn fx:id="tblMemberId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tblMemberName" prefWidth="185.0" text="NAME" />
+            <TableColumn fx:id="tblMemberAddress" prefWidth="247.0" text="ADDRESS" />
+            <TableColumn fx:id="tblMemberContact" prefWidth="247.0" text="CONTACT" />
+            <TableColumn fx:id="tblMemberEmail" prefWidth="321.0" text="EMAIL" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Separator layoutY="63.0" prefHeight="5.0" prefWidth="1160.0" />
+      <AnchorPane layoutX="12.0" layoutY="75.0" prefHeight="198.0" prefWidth="1137.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXButton layoutX="960.0" layoutY="23.0" onAction="#SAVE" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #74b9ff;" text="SAVE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="960.0" layoutY="80.0" onAction="#UPDATE" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #eccc68;" text="UPDATE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="960.0" layoutY="143.0" onAction="#DELETE" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #fab1a0;" text="DELETE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtMemberId" labelFloat="true" layoutX="26.0" layoutY="23.0" prefHeight="31.0" prefWidth="277.0" promptText="ADD MEMBER ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMemberName" labelFloat="true" layoutX="327.0" layoutY="23.0" onKeyReleased="#txtMemberName" prefHeight="31.0" prefWidth="277.0" promptText="ADD MEMBER NAME">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMemberAddress" labelFloat="true" layoutX="634.0" layoutY="23.0" onKeyReleased="#txtMemberAddress" prefHeight="31.0" prefWidth="277.0" promptText="ADD MEMBER ADDRESS">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMemberContact" labelFloat="true" layoutX="26.0" layoutY="111.0" onKeyReleased="#txtMemberContact" prefHeight="31.0" prefWidth="277.0" promptText="ADD MEMBER CONTACT">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMemberEmail" labelFloat="true" layoutX="327.0" layoutY="113.0" onKeyReleased="#txtMemberEmail" prefHeight="31.0" prefWidth="277.0" promptText="ADD MEMBER EMAIL">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbGender" labelFloat="true" layoutX="634.0" layoutY="113.0" prefHeight="31.0" prefWidth="277.0" promptText="GRNDER" />
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

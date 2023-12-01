@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1160.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.SuplierFormController">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <JFXButton layoutX="484.0" layoutY="27.0" onAction="#search" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #7bed9f;" text="SEARCH">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TableView fx:id="table" layoutX="12.0" layoutY="278.0" prefHeight="301.0" prefWidth="1132.0">
+        <columns>
+          <TableColumn fx:id="tblId" prefWidth="111.99996948242188" text="ID" />
+          <TableColumn fx:id="tblName" prefWidth="224.0" text="NAME" />
+            <TableColumn fx:id="tblContact" prefWidth="227.0" text="CONTACT" />
+            <TableColumn fx:id="tblAddress" prefWidth="296.0" text="ADDRESS" />
+            <TableColumn fx:id="tblSuplierBook" prefWidth="246.0" text="SUPLIES BOOK" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="SearchId" labelFloat="true" layoutX="38.0" layoutY="27.0" prefHeight="31.0" prefWidth="393.0" promptText="SEARCH SUPLIER ID">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <Separator layoutY="71.0" prefHeight="0.0" prefWidth="1160.0" />
+      <AnchorPane layoutX="14.0" layoutY="83.0" prefHeight="184.0" prefWidth="1132.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXButton layoutX="954.0" layoutY="17.0" onAction="#save" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #74b9ff;" text="SAVE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="954.0" layoutY="75.0" onAction="#update" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #eccc68;" text="UPDATE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="954.0" layoutY="133.0" onAction="#delete" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #fab1a0;" text="DELETE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtSuplierId" labelFloat="true" layoutX="37.0" layoutY="32.0" prefHeight="31.0" prefWidth="239.0" promptText="ENTER SUPLIER ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSuplierContact" labelFloat="true" layoutX="635.0" layoutY="32.0" onKeyTyped="#suplierContactOnAction" prefHeight="31.0" prefWidth="239.0" promptText="ENTER SUPLIER CONTACT">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSupliesBook" labelFloat="true" layoutX="327.0" layoutY="133.0" onKeyTyped="#SuplierBookOnAction" prefHeight="31.0" prefWidth="239.0" promptText="ENTER SUPLIES BOOK">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSuplierAddress" labelFloat="true" layoutX="37.0" layoutY="133.0" onKeyTyped="#SuplierAddressOnAction" prefHeight="31.0" prefWidth="239.0" promptText="ENTER SUPLIER ADDRESS">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSuplierName" labelFloat="true" layoutX="327.0" layoutY="32.0" onKeyReleased="#suplierNameOnAction" prefHeight="31.0" prefWidth="239.0" promptText="ENTER SUPLIER NAME">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

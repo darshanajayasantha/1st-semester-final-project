@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="300a1f9d-355b-479c-b1d7-6a8d6ce3956c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (3)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM BOOK]]>
+	</queryString>
+	<field name="bookId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bookId"/>
+		<property name="com.jaspersoft.studio.field.label" value="bookId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="author" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="author"/>
+		<property name="com.jaspersoft.studio.field.label" value="author"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="bookName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bookName"/>
+		<property name="com.jaspersoft.studio.field.label" value="bookName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="bookDiscription" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bookDiscription"/>
+		<property name="com.jaspersoft.studio.field.label" value="bookDiscription"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<group name="bookId">
+		<groupExpression><![CDATA[$F{bookId}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="30" forecolor="#0509FF" uuid="f0adcff4-c8b3-4e45-b1bd-43d936efebe9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="18605484-51be-4be0-80fc-886012d25c70"/>
+				</reportElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="1" width="90" height="30" forecolor="#0509FF" uuid="cd2d4d50-856e-4a5f-9303-22e3f726505d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ecb938b0-d605-4b29-850c-2fd37bf94e05"/>
+				</reportElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="-2" width="90" height="30" forecolor="#0509FF" uuid="c10d4072-0af1-42b8-8fb7-be5735dee998">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="efff79d5-7a6e-41f9-8ae5-d33d0d3f29c9"/>
+				</reportElement>
+				<text><![CDATA[Author]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="1" width="70" height="30" forecolor="#0509FF" uuid="6ab4f30a-eeec-4a80-9904-3025aa928b30">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef7a7ff5-a0fa-4b98-90c6-2e89f928436c"/>
+				</reportElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="170" height="30" forecolor="#0509FF" uuid="7aaaa59a-ff02-47ca-9dca-5d70dc1b05f3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c9afd07-1622-43dd-8bf2-68ed09fd81b9"/>
+				</reportElement>
+				<text><![CDATA[Discription]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="70" height="30" uuid="0dba3706-f57f-4e5f-bbab-19ae54357c94">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="18605484-51be-4be0-80fc-886012d25c70"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bookId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="90" height="30" uuid="12f41c75-8f1e-45d5-9aa1-55351143c91b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ecb938b0-d605-4b29-850c-2fd37bf94e05"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bookName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="90" height="30" uuid="e3d61ed0-6cdf-46c6-9337-63c616a7027d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="efff79d5-7a6e-41f9-8ae5-d33d0d3f29c9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{author}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="0" width="70" height="30" uuid="058ff65a-ec09-4e01-8ff7-cfc41064101c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef7a7ff5-a0fa-4b98-90c6-2e89f928436c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="170" height="30" uuid="6b6f99d3-42fd-42fe-b853-70038919c337">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c9afd07-1622-43dd-8bf2-68ed09fd81b9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bookDiscription}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

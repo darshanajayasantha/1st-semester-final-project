@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="578.0" prefWidth="995.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.ExibitionFormController">
+   <children>
+      <ImageView fx:id="datePicker" fitHeight="600.0" fitWidth="999.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pic/horizontal-cover-or-header-725x420-2-1659613461.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXTextArea fx:id="textArea" layoutX="64.0" layoutY="110.0" prefHeight="358.0" prefWidth="861.0" style="-fx-background-color: white; -fx-border-color: #00a8ff;" unFocusColor="#360a0a">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextArea>
+      <JFXTextField fx:id="txtExibitionId" labelFloat="true" layoutX="44.0" layoutY="43.0" prefHeight="31.0" prefWidth="242.0" promptText="Exibition Id" style="-fx-background-color: white; -fx-border-color: #00a8ff;" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="723.0" layoutY="505.0" onAction="#btnOnSendEmails" prefHeight="38.0" prefWidth="225.0" style="-fx-background-color: #00a8ff; -fx-border-color: white;" text="Send Email For All Members" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <DatePicker fx:id="exhibitionDate" layoutX="367.0" layoutY="44.0" prefHeight="31.0" prefWidth="242.0" promptText="Exhibition Date">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </DatePicker>
+      <JFXTextField fx:id="txtTime" labelFloat="true" layoutX="661.0" layoutY="43.0" prefHeight="31.0" prefWidth="242.0" promptText="Time" style="-fx-background-color: white; -fx-border-color: #00a8ff;" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="601.0" layoutY="502.0" onAction="#btnSave" prefHeight="44.0" prefWidth="93.0" style="-fx-background-color: #00a8ff; -fx-border-color: ffff;" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

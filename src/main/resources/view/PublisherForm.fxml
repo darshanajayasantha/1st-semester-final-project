@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1160.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.PublisherFormController">
+   <children>
+      <JFXTextField fx:id="txtSearchId" labelFloat="true" layoutX="23.0" layoutY="31.0" prefHeight="31.0" prefWidth="371.0" promptText="SEARCH PUBLISHER">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXButton layoutX="417.0" layoutY="31.0" onAction="#search" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #7bed9f;" text="SEARCH">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TableView fx:id="table" layoutX="19.0" layoutY="267.0" prefHeight="323.0" prefWidth="1123.0">
+        <columns>
+          <TableColumn fx:id="tblPublisherId" prefWidth="111.0" text="ID" />
+          <TableColumn fx:id="tblPublisherName" prefWidth="296.0" text="PUBLISHER NAME" />
+            <TableColumn fx:id="tblBookName" prefWidth="343.0" text="BOOK NAME" />
+            <TableColumn fx:id="tblPublishedYear" prefWidth="341.0" text="PUBLISHED YEAR OR MONTH" />
+        </columns>
+      </TableView>
+      <Separator layoutY="73.0" prefHeight="11.0" prefWidth="1160.0" />
+      <AnchorPane layoutX="19.0" layoutY="89.0" prefHeight="166.0" prefWidth="1123.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXTextField fx:id="txtPublisherId" labelFloat="true" layoutX="45.0" layoutY="22.0" prefHeight="31.0" prefWidth="276.0" promptText="ADD PUBLISHER ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPublisherName" labelFloat="true" layoutX="405.0" layoutY="22.0" prefHeight="31.0" prefWidth="276.0" promptText="ADD PUBLISHER NAME">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbPublishedBook" labelFloat="true" layoutX="45.0" layoutY="100.0" prefHeight="31.0" prefWidth="276.0" promptText="PUBLISHED BOOK">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXTextField fx:id="txtPublishYear" labelFloat="true" layoutX="405.0" layoutY="100.0" prefHeight="31.0" prefWidth="276.0" promptText="ADD PUBLISH YEAR">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXButton layoutX="880.0" layoutY="22.0" onAction="#save" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #74b9ff;" text="SAVE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="880.0" layoutY="69.0" onAction="#update" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #eccc68;" text="UPDATE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="880.0" layoutY="116.0" onAction="#delete" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #fab1a0;" text="DELETE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

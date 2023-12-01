@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="MainPane" layoutX="200.0" layoutY="152.0" prefHeight="603.0" prefWidth="1152.0">
+         <children>
+            <AnchorPane fx:id="DashBoardPane" accessibleRole="TEXT" layoutX="7.0" prefHeight="603.0" prefWidth="1153.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <JFXButton layoutX="904.0" layoutY="39.0" onMouseClicked="#onMemberReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Member Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="680.0" layoutY="420.0" onMouseClicked="#onBookReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Book Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="680.0" layoutY="291.0" onMouseClicked="#onPublisherReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Publisher Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="904.0" layoutY="291.0" onMouseClicked="#onAuthorReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Author Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton layoutX="680.0" layoutY="39.0" onMouseClicked="#onSuplierReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Suplier Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton layoutX="904.0" layoutY="163.0" onMouseClicked="#onIssueReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Issues Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton layoutX="680.0" layoutY="163.0" onMouseClicked="#onReturnReport" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20; -fx-background-radius: 20;" text="Return Report">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/download__5_-removebg-preview.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow height="0.0" radius="2.4175" width="11.67" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <LineChart fx:id="LineChart" layoutX="14.0" layoutY="27.0" prefHeight="495.0" prefWidth="652.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <JFXButton layoutX="904.0" layoutY="415.0" onAction="#loginExibitionform" prefHeight="53.0" prefWidth="212.0" style="-fx-background-color: #74b9ff; -fx-background-radius: 20;" text="    EXIBITION">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/help-icon-charity-icons-icon-donation-icon-LCk9EpcG-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="904.0" layoutY="476.0" onAction="#loginDonateform" prefHeight="53.0" prefWidth="212.0" style="-fx-background-color: #74b9ff; -fx-background-radius: 20;" text="  DONATES">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/help-icon-charity-icons-icon-donation-icon-LCk9EpcG-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="674.0" layoutY="529.0" onAction="#loginFinesform" prefHeight="53.0" prefWidth="212.0" style="-fx-background-color: #74b9ff; -fx-background-radius: 20;" text="Fines">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../pic/help-icon-charity-icons-icon-donation-icon-LCk9EpcG-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Text fx:id="lblTopic" layoutX="234.0" layoutY="99.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD" wrappingWidth="488.0000142455101">
+         <font>
+            <Font name="System Italic" size="50.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="-44.0" layoutY="39.0" prefHeight="664.0" prefWidth="235.0" style="-fx-background-color: #3498db; -fx-background-radius: 30;">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutX="42.0" layoutY="10.0" onAction="#dashboard" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db; -fx-background-radius: 10;" text="   DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnMember" layoutX="42.0" layoutY="90.0" onAction="#logInMemberForm" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db;" text="MEMBER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="38.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnBook" layoutX="42.0" layoutY="170.0" onAction="#loginBookForm" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db;" text="BOOK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/open-book.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnPublisher" layoutX="42.0" layoutY="250.0" onAction="#loginPublisheform" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db;" text="PUBLISHER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/help-icon-charity-icons-icon-donation-icon-LCk9EpcG-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnAuthor" layoutX="42.0" layoutY="330.0" onAction="#loginAuthorform" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db;" text="AUTHOR">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/Writer-icon-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnIssues" layoutX="42.0" layoutY="410.0" onAction="#loginIssueform" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db;" text="ISSUES">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/pngtree-white-search-icon-image_1344885-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnReturn" layoutX="41.0" layoutY="490.0" onAction="#loginReturnform" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db;" text="RETURN">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/transparent-emails-icon-reply-icon-return-icon-605db657ca7974.5523131916167542638293-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSuplier" layoutX="42.0" layoutY="570.0" onAction="#loginSupliersform" prefHeight="80.0" prefWidth="191.0" style="-fx-background-color: #3498db; -fx-border-radius: 20;" text="SUPLIERS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/images-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Text fx:id="txtDate" fill="#0080d0" layoutX="1115.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE" wrappingWidth="246.3375244140625">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTime" fill="#0080d0" layoutX="1116.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME" wrappingWidth="246.3375244140625">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="newPane" layoutX="950.0" layoutY="23.0" prefHeight="50.0" prefWidth="104.0">
+         <children>
+            <JFXButton layoutX="20.0" layoutY="-3.0" onAction="#LoginEmail" prefHeight="53.0" prefWidth="61.0" style="-fx-background-color: #ecf0f1;" text="." textFill="#ecf0f1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/download%20(3).png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="703.0" prefHeight="63.0" prefWidth="191.0">
+         <children>
+            <JFXButton layoutX="13.0" onAction="#onLogout" prefHeight="53.0" prefWidth="165.0" style="-fx-background-color: #ecf0f1;" text="LOG-OUT" textFill="#ecf0f1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/images%20(2).jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

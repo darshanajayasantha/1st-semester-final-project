@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1160.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LibrarySystem.Controller.AuthorFormController">
+   <children>
+      <JFXButton layoutX="550.0" layoutY="24.0" onAction="#search" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #7bed9f;" text="SEARCH">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="txtSearchAuthor" labelFloat="true" layoutX="19.0" layoutY="24.0" prefHeight="31.0" prefWidth="492.0" promptText="SEARCH AUTHORS">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <TableView fx:id="table" layoutX="19.0" layoutY="258.0" prefHeight="323.0" prefWidth="1126.0">
+        <columns>
+          <TableColumn fx:id="tblAuthorId" prefWidth="128.0" text="ID" />
+          <TableColumn fx:id="tblAuthorName" prefWidth="443.0" text="AUTHOR NAME" />
+            <TableColumn fx:id="tblBookName" prefWidth="533.0" text="BOOK NAME" />
+        </columns>
+      </TableView>
+      <Separator layoutY="58.0" prefHeight="31.0" prefWidth="1162.0" />
+      <AnchorPane layoutX="58.0" layoutY="76.0" prefHeight="173.0" prefWidth="1059.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <JFXButton layoutX="724.0" layoutY="128.0" onAction="#update" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #eccc68;" text="UPDATE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtBookName" labelFloat="true" layoutX="50.0" layoutY="135.0" onKeyTyped="#BookName" prefHeight="31.0" prefWidth="345.0" promptText="ADD BOOK NAME">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAuthorId" labelFloat="true" layoutX="50.0" layoutY="28.0" prefHeight="31.0" prefWidth="345.0" promptText="ADD AUTHOR ID">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAuthorName" labelFloat="true" layoutX="50.0" layoutY="82.0" onKeyTyped="#AuthorName" prefHeight="31.0" prefWidth="345.0" promptText="ADD AUTHOR NAME">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXButton layoutX="892.0" layoutY="128.0" onAction="#delete" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #fab1a0;" text="DELETE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="560.0" layoutY="128.0" onAction="#save" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #74b9ff;" text="SAVE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

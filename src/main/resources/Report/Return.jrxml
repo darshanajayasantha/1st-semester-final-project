@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Return" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e098fa3-0d1a-4866-b70b-857956aef9b3">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (8)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM returns]]>
+	</queryString>
+	<field name="Return_Id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Return_Id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Return_Id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="returns"/>
+	</field>
+	<field name="Return_Date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Return_Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Return_Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="returns"/>
+	</field>
+	<field name="IssuseId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="IssuseId"/>
+		<property name="com.jaspersoft.studio.field.label" value="IssuseId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="returns"/>
+	</field>
+	<field name="IssuseDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="IssuseDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="IssuseDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="returns"/>
+	</field>
+	<group name="Return_Id">
+		<groupExpression><![CDATA[$F{Return_Id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="30" forecolor="#3B11F7" uuid="59938dab-8e36-40e4-a5c4-328b521b6f5c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8d6a8635-6c1f-47d8-bb9f-facf7c25d4a5"/>
+				</reportElement>
+				<text><![CDATA[Return Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="138" height="30" forecolor="#3B11F7" uuid="e140ae64-3aaa-439f-ac91-d8c853f50ae3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f4539b51-6fcb-4b90-aba0-3d94ade6a0ae"/>
+				</reportElement>
+				<text><![CDATA[Return Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="111" height="30" forecolor="#3B11F7" uuid="5682e4ae-a4d3-45e6-bc1e-d212fd559072">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="771de2e4-02bf-4e3f-9286-52bcca7f4279"/>
+				</reportElement>
+				<text><![CDATA[Issuse Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" forecolor="#3B11F7" uuid="610d9b45-a5c2-4410-9558-67ff86ccf136">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea560ff1-a096-44b3-aaf4-de466d62e8e6"/>
+				</reportElement>
+				<text><![CDATA[Issuse Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="90" height="30" uuid="8fd933e8-9b97-4805-b673-82b727843a84">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8d6a8635-6c1f-47d8-bb9f-facf7c25d4a5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Return_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="138" height="30" uuid="01d33b86-561f-4add-8314-2da192bf0441">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f4539b51-6fcb-4b90-aba0-3d94ade6a0ae"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Return_Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="111" height="30" uuid="7741fe6a-687d-4239-aab8-76c8254613c6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="771de2e4-02bf-4e3f-9286-52bcca7f4279"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{IssuseId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="f4e55eb1-421f-4a41-a6a8-41d233cd946d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea560ff1-a096-44b3-aaf4-de466d62e8e6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{IssuseDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
